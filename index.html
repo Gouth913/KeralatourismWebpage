@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kerala Tourism</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>        
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#welcome-section">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-kerala">About Kerala</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link login-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="fade-in">
+        <div class="container">
+            <h1>Welcome to Kerala</h1>
+            <p>Explore the beauty of God's Own Country</p>
+        </div>
+    </section>
+    <br>
+
+    <!-- Carousel -->
+    <div id="keralaCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <button type="button" data-bs-target="#keralaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#keralaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#keralaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="IMAGES/K.WEB 2.jpg" class="img-fluid" alt="Kerala Beach">
+                <div class="carousel-caption ">
+                    <h5>Pristine Beaches</h5>
+                    <p>Relax on the serene beaches of Kerala.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="IMAGES/K.WEB 1.jpg" class="img-fluid" alt="Kerala Backwaters">
+                <div class="carousel-caption">
+                    <h5>Enchanting Backwaters</h5>
+                    <p>Experience the tranquility of the backwaters.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="IMAGES/K.WEB 7.jpg" class="img-fluid" alt="Kerala Hill Station">
+                <div class="carousel-caption">
+                    <h5>Misty Hill Stations</h5>
+                    <p>Explore the picturesque hill stations of Kerala.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#keralaCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#keralaCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Kerala Section -->
+    <section id="about-kerala">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="IMAGES/K.WEB 5.webp" class="img-fluid rounded" alt="Kerala Culture">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Kerala</h2>
+                    <p>Kerala, known as 'God's Own Country', is a tropical paradise in South India. It is renowned for its backwaters, beaches, hill stations, and rich cultural heritage. Visitors can enjoy Ayurvedic treatments, traditional dance forms, and delicious cuisine in this serene state.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section id="destinations" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Popular Destinations</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMAGES/K.WEB 4.jpg" class="img-fluid" alt="Munnar">
+                        <div class="card-body">
+                            <h5 class="card-title">Munnar</h5>
+                            <p class="card-text">Munnar is a hill station known for its tea plantations, misty mountains, and lush greenery.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMAGES/K.WEB 3.jpg" class="img-fluid" alt="Alleppey">
+                        <div class="card-body">
+                            <h5 class="card-title">Alleppey</h5>
+                            <p class="card-text">Alleppey, also known as Alappuzha, is famous for its backwaters and houseboat cruises.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMAGES/K.WEB 6.jpg" class="img-fluid" alt="Kovalam">
+                        <div class="card-body">
+                            <h5 class="card-title">Kovalam</h5>
+                            <p class="card-text">Kovalam is a beach town known for its crescent-shaped beaches and lighthouse.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="row">
+        <div class="col-4">
+          <div id="item-action" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#item-1">Thiruvananthapuram</a>
+            <a class="list-group-item list-group-item-action" href="#item-2">Kollam</a>
+            <a class="list-group-item list-group-item-action" href="#item-3">Pathanamthitta</a>
+            <a class="list-group-item list-group-item-action" href="#item4">Alappuzha</a>
+            <a class="list-group-item list-group-item-action" href="#item-5">Kottayam</a>
+            <a class="list-group-item list-group-item-action" href="#item-6">Idukki</a>
+            <a class="list-group-item list-group-item-action" href="#item-7">Ernakulam</a>
+            <a class="list-group-item list-group-item-action" href="#item-8">Thrissur</a>
+            <a class="list-group-item list-group-item-action" href="#item-9">Palakkad</a>
+            <a class="list-group-item list-group-item-action" href="#item-10">Malappuram</a>
+            <a class="list-group-item list-group-item-action" href="#item-11">Kozhikode</a>
+            <a class="list-group-item list-group-item-action" href="#item-12">Wayanad</a>
+            <a class="list-group-item list-group-item-action" href="#item-13">Kannur</a>
+            <a class="list-group-item list-group-item-action" href="#item-14">Kasaragod</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <h5 id="item-1">Thiruvananthapuram</h5>
+            <p>The southernmost district of Kerala, Thiruvananthapuram is not known just as capital of the state but also a land of white sandy beaches and wooded highlands which attracts tourists from the far west. Its magnificent monuments and ancient shrines stand as testament to its varied cultural and historic past.
+
+                Sri Padmanabhaswamy temple
+                
+                Neyyar wildlife sanctuary
+                
+                Agasthyamala peak
+                
+                Poovar island
+                
+                Napier museum
+                
+                Varkala beach
+                
+                Padmanabhapuram palace
+                
+                Kovalam beach
+                
+                Veli tourist village
+                
+                Ponmudi</p>
+            <h5 id="item-2">Kollam</h5>
+            <p>Situated on the banks of Ashtamudi Lake, Kollam is a land with immense tourist potential. It has beautiful beaches and backwaters, meandering rivers, lovely lakes, majestic mountains, verdant valleys, lush forests, fertile plains and vast green fields, enough to bring people searching for this gem of a land.
+
+                Thenmala
+                
+                Jadayu para
+                
+                Thangassery
+                
+                Munroe Island
+                
+                Palaruvi waterfalls
+                
+                Achankovil Temple
+                
+                Kollam Beach
+                
+                Mayyanad Beach
+                
+                Sasthamkotta lake
+                
+                Thevally palace</p>
+            <h5 id="item-3">Pathanamthitta</h5>
+            <p>Known as the headquarters of pilgrimage tourism of Kerala, this land of temples is yet to receive its due place in the tourism map of the country. Blessed by nature it is covered in vast unending stretches of forests, rivers and serine countryside, all of which are a treat to one’s eyes.
+
+                Gavi
+                
+                Sabarimala
+                
+                Konni Elephant Training Center
+                
+                Perunthenaruvi waterfalls
+                
+                Aranmula
+                
+                Konni forest reserve
+                
+                Angamoozhy
+                
+                Kaviyoor rock temple
+                
+                Adavi</p>
+            <h5 id="item-4">Alappuzha</h5>
+            <p>Known as the Venice of the east, Alappuzha is a waterlogged district endowed with immense natural beauty and has emerged as a major tourist destination of the country. Today Alappuzha is well known for its beaches and backwaters.
+
+                Alappuzha Beach
+                
+                Arthunkal Church
+                
+                Mannarasala Temple
+                
+                Ambalappuzha Sreekrishna Temple
+                
+                Karumadi
+                
+                Vembanad lake
+                
+                Kuttanad Backwaters
+                
+                Marari Beach
+                
+                Krishnapuram Palace.
+                
+                Pathiramanal</p>
+            <h5 id="item-5">Kottayam</h5>
+            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+
+                Ilaveezhapoonchira
+                
+                Illikkal kallu
+                
+                Nadukani
+                
+                Nadukani
+                
+                Vagamon
+                
+                Parunthumpara Hill
+                
+                Kumarakom</p>
+            <h5 id="item-6">Idukki</h5>
+            <p>Derived from the Malayalam word ‘Idukku’, meaning a narrow gorge Idukki is a slice of heaven. Blessed with one of the most pristine reserve forest, hill stations, tea plantations and wildlife sanctuaries it should definitely find a place in your pit stops in Kerala.
+
+                Ramakkalmedu
+                
+                Periyar Tiger Reserve
+                
+                Nedumkandam Hills
+                
+                Peerumedu
+                
+                Thommankuthu falls
+                
+                Idukki Wildlife Sanctuary
+                
+                Kalvari Mount
+                
+                Palkulamedu
+                
+                Munnar
+                
+                Munnar
+                
+                Cheeyappara Waterfalls
+                
+                Idukki Arch Dam
+                
+                Eravikulam National Park.
+                
+                Cheruthoni Dam</p>
+            <h5 id="item-7">Ernakulam</h5>
+            <p>Recognised as the commercial capital, it is the most cosmopolitan city of Kerala. With the Chinese, Portuguese and British influences, Ernakulam has always been a land of varied cultural demographic. Ernakulam sees a large number of tourist arrivals every year.
+
+                Mattancherry Palace
+                
+                Bhoothathankettu Dam and Reserve Forest
+                
+                Kodanad Elephant Training Center
+                
+                Hill Palace Museum
+                
+                Bolgatty Palace
+                
+                Fort Kochi
+                
+                Cherai Beach
+                
+                Paradesi Synagogue
+                
+                Dutch Palace
+                
+                Wonderla Amusement Park
+                
+                Thattekkad Bird Sanctuary
+                
+                Marine Drive</p>
+            <h5 id="item-8">Thrissur</h5>
+            <p>Referred to as the cultural capital of the state,Thrissur is the seat of, many of Kerala’s cultural and archaeological wealth. It is also well endowed with splendid natural beauty in the form of Beaches, Hills, Waterfalls etc.
+
+                Below are some of the most important tourist places in Thrissur:
+                
+                Vadakkunnathan Temple
+                
+                Kerala kalamandalam
+                
+                Malakkappara
+                
+                Peechi Dam
+                
+                Chavakkad Beach
+                
+                Shakthan Thampuran Palace
+                
+                Guruvayoor Temple
+                
+                Thrissur Zoo and Museum
+                
+                Athirappilly waterfalls
+                
+                Basilica of Our Lady of Dolours</p>
+            <h5 id="item-9">Palakkad</h5>
+            <p>The rice bowl of Kerala, Palakkad is the largest district in the state. The topography of Palakkad is a rich blend of forests, rivers, valleys and hills. The state also has a significant influence on  Kerala’s historic and cultural backdrop.
+
+                Palakkad fort
+                
+                Silent Valley national park
+                
+                Malampuzha dam and gardens
+                
+                Parambikkulam wildlife sanctuary
+                
+                Kava viewpoint
+                
+                Dhoni Hills
+                
+                Nelliyampathy hills
+                
+                Pothundi dam</p>
+            <h5 id="item-10">Malappuram</h5>
+            <p>One of the northern districts of Kerala, Malappuram is flanked by Arabian Sea on the West and Western Ghats on the east. With an eventful history of the Zamorin rule, the uprisings against British rule, this is a land of great historic and political significance. Its monuments, authentic cuisine, ritualistic art forms all make Malappuram a much loved destination for travellers.
+
+                Kottakkunnu
+                
+                Kadampuzha
+                
+                Keralamkundu waterfalls
+                
+                Thirunavaya
+                
+                Padinharekara Beach
+                
+                Kadalundi bird sanctuary</p>
+            <h5 id="item-11">Kozhikode</h5>
+            <p>With a distinct place in the Indian history, with Vasco Da Gama landing in Kappad in 1498, Kozhikode is not only known for its historical significance but also for the hospitable and welcoming people, the unique culture and mouth watering food.
+
+                Kappad beach
+                
+                Kakkayam dam
+                
+                Kozhikode Beach
+                
+                Thusharagiri waterfalls
+                
+                Mananchira square
+                
+                Beypore beach
+                
+                Pazhassiraja Museum
+                
+                Kalipoyka
+                
+                Peruvannamuzhi dam</p>
+            <h5 id="item-12">Wayanad</h5>
+            <p>Known as the spice garden of the south, the land of paddy fields, and the home of the monsoon, Wayanad is a heaven like none other. Southernmost tip of the Deccan plateau, Wayanad is a land of virgin forests and misty peaks, alluring tourists from far and beyond.
+
+                Chembra peak
+                
+                Muthanga wildlife sanctuary
+                
+                Soochippara waterfalls
+                
+                Edakkal caves
+                
+                Pakshipathalam
+                
+                Banasurasagar dam
+                
+                Kuruva island
+                
+                Pookot lake
+                
+                Lakkidi
+                
+                Pazhassi Raja tomb</p>
+            <h5 id="item-13">Kannur</h5>
+            <p>Fort St. Angelos
+
+                Pazhassi Dam
+                
+                Parassinikadavu Temple
+                
+                Peralassery Temple Pond & Hanging Bridge
+                
+                Thalassery fort
+                
+                Paithalmala
+                
+                Taliparamba
+                
+                Muzhupilangad Beach
+                
+                Pappinisseri Snake Park
+                
+                Payyambalam Beach
+                
+                Gundert Bungalow</p>
+            <h5 id="iteam-14">Kasaragod</h5>
+            <p>Known for handloom industries worldwide, Kasaragod is a land of abundant beauty. With a strong foothold in the cultural landscape of Kerala, Kasaragod is a must visit destination. With the beaches, forts , hills and rivers, it is a land of many faces.
+
+                Bekal Fort
+                
+                Ananthapura Lake Temple
+                
+                Madhur Temple
+                
+                Pallikkara Beach
+                
+                Ranipuram Hills
+                
+                Valiyaparamba Backwaters</p>
+          </div>
+        </div>
+      </div> -->
+
+
+
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+            <label for="floatingInputGrid">Email address</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelectGrid">
+              <option selected>Open this select menu</option>
+              <option value="">Thiruvananthapuram</option>
+              <option value="">Kollam</option>
+              <option value="">Pathanamthitta</option>
+              <option value="">Alappuzha</option>
+              <option value="">Kottayam</option>
+              <option value="">Idukki</option>
+              <option value="">Ernakulam</option>
+              <option value="">Thrissur</option>
+              <option value="">Palakkad</option>
+              <option value="">Malappuram</option>
+              <option value="">Kozhikode</option>
+              <option value="">Wayanad</option>
+              <option value="">Kannur</option>
+              <option value="">Kasaragod</option>
+            </select>
+            <label for="floatingSelectGrid">-Select-Districts</label>
+          </div>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Submit</button>
+          </div>
+      </div>
+
+      <br>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information, feel free to reach out to us.</p>
+            <p>Email: <a href="mailto:info@keralatourism.com">info@keralatourism.com</a></p>
+            <p>Phone: +91 9900774433</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Kerala Tourism. All Rights Reserved.</p>
+            </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Basic login form submission
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Login successful!');
+            // After successful login, change the login link to sign out
+            document.querySelector('.login-link').textContent = 'Sign Out';
+            document.querySelector('.login-link').setAttribute('href', '#');
+            document.querySelector('.login-link').setAttribute('data-bs-toggle', '');
+            document.querySelector('.login-link').addEventListener('click', function() {
+                alert('You have signed out.');
+                location.reload(); // Reload the page after sign out
+            });
+            document.getElementById('loginModal').classList.remove('show');
+            document.querySelector('.modal-backdrop').remove();
+        });
+    </script>
+</body>
+</html>
